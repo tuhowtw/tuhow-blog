@@ -20,6 +20,7 @@ canonifyURLs = false
   tocOpen = false
 
   [params.assets]
+    disableFingerprinting = true
     favicon = "favicon.webp"
     favicon16x16 = "favicon.webp"
     favicon32x32 = "favicon.webp"
