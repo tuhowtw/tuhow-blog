@@ -1,0 +1,64 @@
+baseURL = "https://tuhow.tw/"
+languageCode = "zh-tw"
+title = "TU HOW 涂皓"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "TU HOW 的想法存放庫；Idea Base of TU HOW!"
+  author = "涂皓TU HOW"
+  defaultTheme = "auto"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  tocOpen = false
+
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+
+  [params.homeInfoParams]
+    Title = "涂皓TU HOW 的首頁！"
+    Content = "TU HOW 的想法存放庫；Idea Base of TU HOW!"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
