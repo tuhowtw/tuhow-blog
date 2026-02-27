@@ -4,7 +4,7 @@ Welcome to the repository for the **TU HOW Blog**!
 
 TU HOW 的想法存放庫；Idea Base of TU HOW! 
 
-This repository contains the source code, Markdown raw files, and configuration for the static Hugo site hosted at: [https://tuhowtw.github.io/tuhow-blog/](https://tuhowtw.github.io/tuhow-blog/)
+This repository contains the source code, Markdown raw files, and configuration for the static Hugo site hosted at: [https://tuhow.tw/](https://tuhow.tw/)
 
 ---
 
