@@ -17,6 +17,6 @@ cover:
 
 - [Facebook: TU HOW](https://www.facebook.com/tuhowtw/)
 
-- [Instagram: @drunkhow (for writing)](https://www.instagram.com/drunkhow/)
+- [Instagram: @tuhow.tw (for writing)](https://www.instagram.com/tuhow.tw/)
 
 ![](/images/IMG_0019-2-3.jpg)

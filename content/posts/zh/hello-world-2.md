@@ -15,7 +15,7 @@ cover:
 
 - [Facebook 涂皓](https://www.facebook.com/tuhowtw/)
 
-- [Instagram 寫作帳號： @drunkhow](https://www.instagram.com/drunkhow/)
+- [Instagram 寫作帳號： @tuhow.tw](https://www.instagram.com/tuhow.tw/)
 
 - [LinkedIn：TU HAO (TU HOW)](https://www.linkedin.com/in/tuhowtw/)
 
