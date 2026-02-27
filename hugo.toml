@@ -24,6 +24,8 @@ canonifyURLs = false
 
   [params.label]
     text = "TU HOW 涂皓"
+    icon = "favicon.webp"
+    iconHeight = 35
 
   [params.cover]
     linkFullImages = true

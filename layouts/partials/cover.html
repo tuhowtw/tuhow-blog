@@ -20,7 +20,7 @@
     {{- $processableFormats = $processableFormats | append "webp" -}}
     {{- end -}}
 
-    {{- $imgdl := (.Params.cover.image) | absURL }}
+    {{- $imgdl := (strings.TrimPrefix "/" .Params.cover.image) | absURL }}
     {{- if $cover -}}
     {{- $imgdl = $cover.Permalink }}
     {{- end -}}
