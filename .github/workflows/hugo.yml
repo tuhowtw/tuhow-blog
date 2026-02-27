@@ -44,6 +44,11 @@ jobs:
         run: |
           hugo --gc --minify --baseURL "https://tuhowtw.github.io/"
 
+      - name: List files
+        run: |
+          ls -R public/
+          test -f public/index.html && echo "index.html exists" || echo "index.html MISSING"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
