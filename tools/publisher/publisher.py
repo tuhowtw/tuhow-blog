@@ -192,7 +192,8 @@ class PublisherApp:
 
         tk.Label(self.root, text="Language (en/zh):").grid(row=6, column=0, sticky='w', **padding)
         self.entry_lang = tk.Entry(self.root, width=50)
-        self.entry_lang.insert(0, "zh")
+        prefill_lang = self.prefill_data.get("language", self.prefill_data.get("lang", "zh"))
+        self.entry_lang.insert(0, prefill_lang)
         self.entry_lang.grid(row=6, column=1, **padding)
 
         self.var_draft = tk.BooleanVar(value=False)
