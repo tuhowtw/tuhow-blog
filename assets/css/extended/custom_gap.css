@@ -1,0 +1,4 @@
+.first-entry {
+    margin-bottom: var(--gap) !important;
+    min-height: auto !important;
+}
