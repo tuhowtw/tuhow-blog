@@ -20,7 +20,7 @@ canonifyURLs = false
   tocOpen = false
 
   [params.assets]
-    favicon = "/favicon.webp"
+    favicon = "favicon.webp"
 
   [params.label]
     text = "TU HOW 涂皓"

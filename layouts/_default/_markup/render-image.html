@@ -11,7 +11,7 @@
 {{- $src = printf "%s#%s" $src . -}}
 {{- end -}}
 {{- else -}}
-{{- $src = $src | absURL -}}
+{{- $src = (strings.TrimPrefix "/" $src) | absURL -}}
 {{- end -}}
 {{- end -}}
 {{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading"
