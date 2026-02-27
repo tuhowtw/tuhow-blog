@@ -161,7 +161,8 @@ class PublisherApp:
 
         tk.Label(self.root, text="Slug (URL):").grid(row=1, column=0, sticky='w', **padding)
         self.entry_slug = tk.Entry(self.root, width=50)
-        self.entry_slug.insert(0, self.slug_guess)
+        prefill_slug = self.prefill_data.get("url-slug", self.prefill_data.get("slug", self.slug_guess))
+        self.entry_slug.insert(0, prefill_slug)
         self.entry_slug.grid(row=1, column=1, **padding)
 
         tk.Label(self.root, text="Date:").grid(row=2, column=0, sticky='w', **padding)
