@@ -42,7 +42,11 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --gc --minify --baseURL "https://tuhow.tw/"
+          hugo \
+            --gc \
+            --minify \
+            --logLevel debug \
+            --baseURL "https://tuhowtw.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
