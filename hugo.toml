@@ -1,4 +1,4 @@
-baseURL = "https://tuhowtw.github.io/tuhow-blog/"
+baseURL = "https://tuhow.tw/"
 languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
