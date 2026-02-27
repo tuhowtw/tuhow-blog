@@ -36,6 +36,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Debug Submodules
+        run: |
+          ls -R themes/PaperMod/layouts/partials || echo "Theme partials not found"
+          test -f themes/PaperMod/layouts/partials/author.html && echo "author.html exists" || echo "author.html MISSING"
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -44,11 +49,13 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
           TZ: Asia/Taipei
         run: |
           hugo \
             --gc \
             --minify \
+            --debug \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
