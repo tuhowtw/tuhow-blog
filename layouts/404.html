@@ -1,12 +1,12 @@
 {{- define "main" }}
 <div class="not-found" style="text-align: center; margin-top: 100px;">
-    <h1 style="font-size: 5rem;">404</h1>
+    <h1 style="font-size: 4rem;">404</h1>
     <p>頁面未找到；Page not found.</p>
-    <p>正在返回首頁... Redirecting to homepage in 3 seconds...</p>
+    <p id="redirect-status">正在返回首頁... Redirecting in 3 seconds...</p>
 </div>
 <script>
     setTimeout(function () {
-        window.location.href = "{{ site.BaseURL }}";
+        window.location.replace("/");
     }, 3000);
 </script>
 {{- end }}
