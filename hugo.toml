@@ -3,6 +3,8 @@ languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
 paginate = 10
+relativeURLs = true
+canonifyURLs = true
 
 [params]
   env = "production"
