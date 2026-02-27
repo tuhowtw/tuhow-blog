@@ -1,10 +1,10 @@
-baseURL = "https://tuhow.tw/"
+baseURL = "https://tuhowtw.github.io/tuhow-blog/"
 languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
 paginate = 10
-relativeURLs = false
-canonifyURLs = true
+relativeURLs = true
+canonifyURLs = false
 
 [params]
   env = "production"
