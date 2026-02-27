@@ -1,12 +1,24 @@
 {{- define "main" }}
-<div class="not-found" style="text-align: center; margin-top: 100px;">
-    <h1 style="font-size: 4rem;">404</h1>
-    <p>頁面未找到；Page not found.</p>
-    <p id="redirect-status">正在返回首頁... Redirecting in 3 seconds...</p>
+<div class="not-found-container"
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; text-align: center; font-family: sans-serif;">
+    <h1 style="font-size: 80px; margin: 0; color: var(--primary);">404</h1>
+    <p style="font-size: 20px; font-weight: bold;">頁面不存在 | Page Not Found</p>
+    <p style="font-size: 16px; color: var(--secondary); margin-top: 10px;">
+        3秒後自動返回首頁...<br>
+        Redirecting to homepage in 3 seconds...
+    </p>
+    <a href="/"
+        style="margin-top: 20px; padding: 10px 20px; background: var(--primary); color: var(--theme); text-decoration: none; border-radius: 5px; font-weight: bold;">
+        返回首頁 Return Home
+    </a>
 </div>
+
 <script>
-    setTimeout(function () {
-        window.location.replace("/");
-    }, 3000);
+    (function () {
+        console.log("404 Redirect timer started...");
+        setTimeout(function () {
+            window.location.replace("/");
+        }, 3000);
+    })();
 </script>
 {{- end }}
