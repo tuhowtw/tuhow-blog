@@ -21,6 +21,9 @@ canonifyURLs = false
 
   [params.assets]
     favicon = "favicon.webp"
+    favicon16x16 = "favicon.webp"
+    favicon32x32 = "favicon.webp"
+    apple_touch_icon = "favicon.webp"
 
   [params.label]
     text = "TU HOW 涂皓"
