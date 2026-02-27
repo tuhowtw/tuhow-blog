@@ -37,7 +37,15 @@ canonifyURLs = false
 
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/"
+    url = "https://github.com/tuhowtw/tuhow-blog"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/tuhowtw/"
+
+  [[params.socialIcons]]
+    name = "facebook"
+    url = "https://www.facebook.com/tuhowtw"
 
 [menu]
   [[menu.main]]
