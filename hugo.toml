@@ -3,7 +3,7 @@ languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
 paginate = 10
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = true
 
 [params]
@@ -18,6 +18,9 @@ canonifyURLs = true
   showCodeCopyButtons = true
   showToc = true
   tocOpen = false
+
+  [params.assets]
+    favicon = "/favicon.webp"
 
   [params.cover]
     linkFullImages = true
