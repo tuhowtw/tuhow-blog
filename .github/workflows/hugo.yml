@@ -42,7 +42,7 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --gc --minify --baseURL "https://tuhowtw.github.io/"
+          hugo --gc --minify --baseURL "https://tuhowtw.github.io/tuhow-blog/"
 
       - name: List files
         run: |
