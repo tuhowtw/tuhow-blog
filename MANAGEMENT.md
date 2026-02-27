@@ -54,16 +54,16 @@ cover:
 
 ## 🚀 Publishing to the Live Site
 
-You don't need to manually run Hugo. GitHub Actions handles the deployment.
+You don't need to manually run Hugo or Git. 
 
-1. Open your terminal in the `tuhow-blog` directory (or use VS Code Source Control / GitHub Desktop).
-2. Commit your changes:
-   ```bash
-   git add .
-   git commit -m "Publish new article: [Your Article Name]"
-   git push
-   ```
-3. Wait about 1-2 minutes. The live site at **[https://tuhowtw.github.io/tuhow-blog/](https://tuhowtw.github.io/tuhow-blog/)** will automatically update!
+If you use the **Obsidian Publisher Tool** (`publish.bat`), it will automatically:
+1. Copy your images and fix paths.
+2. Save your `.md` file to the correct directory.
+3. **Automatically commit and push** the changes to your GitHub repository!
+
+Wait about 1-2 minutes after the success message, and the live site at **[https://tuhowtw.github.io/tuhow-blog/](https://tuhowtw.github.io/tuhow-blog/)** will automatically update!
+
+If you are just editing files directly in the repo instead of using the tool, simply double-click the `publish_edits.bat` file in your `tuhow-blog` directory to quickly auto-commit and push your changes.
 
 ---
 
