@@ -3,7 +3,7 @@ languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
 paginate = 10
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 
 [params]
@@ -21,6 +21,11 @@ canonifyURLs = false
 
   [params.assets]
     favicon = "/favicon.webp"
+
+  [params.label]
+    text = "TU HOW 涂皓"
+    icon = "/favicon.webp"
+    iconHeight = 35
 
   [params.cover]
     linkFullImages = true
