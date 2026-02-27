@@ -67,6 +67,33 @@ You don't need to manually run Hugo. GitHub Actions handles the deployment.
 
 ---
 
+## ✏️ Editing Existing Posts
+
+**Option A: Quick Edits**
+If you just want to fix a typo or make a small change, simply open the `.md` file directly from the `tuhow-blog/content/posts/` folder using Obsidian, edit it, and commit/push the changes using git.
+
+**Option B: Full Re-Publishing**
+If your original working document is separate from the `tuhow-blog` repo, you can simply edit your original file in Obsidian, and drag it *back* onto `publish.bat` again. 
+*   **Important:** Just make sure you write the *exact same Slug (URL)* in the Publisher Tool window. It will safely overwrite the previous version of the file in the `content/posts/` directory.
+
+---
+
+## 🔗 Linking Between Posts (Internal Links)
+
+To create a link to another one of your blog posts, use a standard markdown link that points directly to the final live path. 
+
+The format should start with a `/`, followed by the `posts` directory, the language (if any), and the slug of the post you want to link to.
+
+**Example:**
+If you wrote an article with the slug `man-wearing-earrings` and language `en`, its path is `/posts/en/man-wearing-earrings/`.
+
+To link to it, write this in your markdown:
+```markdown
+Check out my previous thoughts on [Why I wear earrings](/posts/en/man-wearing-earrings/).
+```
+
+---
+
 ## 🛠 Troubleshooting
 
 *   **Images aren't showing on the live site**: Verify the image link in your markdown starts with `/images/` (e.g. `![](/images/photo.png)`), AND check that the actual `.png` file exists in the `static/images/` folder.
