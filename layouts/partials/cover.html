@@ -1,5 +1,5 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
-{{- if .Params.cover.image }}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
 <figure class="entry-cover">
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
