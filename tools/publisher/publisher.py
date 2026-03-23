@@ -134,7 +134,7 @@ class PublisherApp:
                     break
         
         if os.path.exists(abs_source_path):
-            basename = os.path.basename(abs_source_path)
+            basename = os.path.basename(abs_source_path).replace(" ", "_")
             dest_path = os.path.join(IMAGES_DIR, basename)
             hugo_rel_path = f"/images/{basename}"
             
