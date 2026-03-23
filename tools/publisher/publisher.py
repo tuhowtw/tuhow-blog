@@ -156,7 +156,7 @@ class PublisherApp:
         
         tk.Label(self.root, text="Title:").grid(row=0, column=0, sticky='w', **padding)
         self.entry_title = tk.Entry(self.root, width=50)
-        self.entry_title.insert(0, self.title_guess)
+        self.entry_title.insert(0, self.prefill_data.get("title", self.title_guess))
         self.entry_title.grid(row=0, column=1, **padding)
 
         tk.Label(self.root, text="Slug (URL):").grid(row=1, column=0, sticky='w', **padding)
