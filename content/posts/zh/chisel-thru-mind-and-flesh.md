@@ -1,6 +1,6 @@
 ---
 title: "為了留下事物而鑿開的空洞"
-date: "2026-03-23T11:25:15Z"
+date: "2026-03-23T11:32:13Z"
 slug: "chisel-thru-mind-and-flesh"
 draft: false
 author: "涂皓TU HOW"

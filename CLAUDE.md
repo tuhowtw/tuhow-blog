@@ -59,6 +59,13 @@ cover:
 ---
 ```
 
+## Obsidian Plugin (`C:\Users\drunk\Obsidian\vaultHOW\.obsidian\plugins\tuhow-publisher\`)
+A TypeScript/JS Obsidian plugin that publishes directly from within Obsidian (no drag-and-drop needed).
+- Source: `main.ts` — edit this for any logic changes
+- Built output: `main.js` — run `npm run build` in the plugin directory after editing `main.ts`
+- Reload the plugin in Obsidian after rebuilding (disable → re-enable in Settings → Community Plugins)
+- Same YAML metadata format and field mappings as `publisher.py` above
+
 ## Workflow Notes
 - `publish_edits.bat` — quick commit+push for direct edits (no publisher GUI)
 - Images are copied to `static/images/` automatically by the publisher
