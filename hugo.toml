@@ -3,6 +3,7 @@ languageCode = "zh-tw"
 title = "TU HOW 涂皓"
 theme = "PaperMod"
 paginate = 10
+hasCJKLanguage = true
 relativeURLs = false
 canonifyURLs = true
 
@@ -11,7 +12,8 @@ canonifyURLs = true
   description = "TU HOW 的想法存放庫；Idea Base of TU HOW!"
   author = "涂皓TU HOW"
   defaultTheme = "auto"
-  showReadingTime = true
+  showReadingTime = false
+  showWordCount = true
   showShareButtons = true
   showPostNavLinks = true
   showBreadCrumbs = true
